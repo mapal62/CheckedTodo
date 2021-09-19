@@ -44,7 +44,7 @@ function logMessage(message) {
     consoleLog.innerHTML += message + "<br>";
 }
 
-textarea.addEventListener('keydown', (e) => {
+/* textarea.addEventListener('keydown', (e) => {
     if (!e.repeat)
         logMessage(`"${e.key}" pressed  [event: keydown]`);
     else
@@ -58,10 +58,11 @@ textarea.addEventListener('beforeinput', (e) => {
 textarea.addEventListener('input', (e) => {
     logMessage(`"${e.data}" input  [event: input]`);
 });
-
+ */
 textarea.addEventListener('keyup', (e) => {
     logMessage(`"${e.key}" released  [event: keyup]`);
     if (e.key === "Enter") {
+        console.log(e.key);
         ujSor();
     }
 });
