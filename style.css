@@ -1,0 +1,59 @@
+body {
+    background-color: #50e3c2;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.cetli {
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    width: 90%;
+    margin: 30px auto 60px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #b8b8b8;
+}
+
+button {
+    background-color: #df69e8;
+    color: white;
+    border: none;
+    margin: 0;
+    height: 25px;
+}
+
+input {
+    margin: 0;
+    height: 25px;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row p {
+    margin: 0;
+    text-align: left;
+    padding-top: 8px;
+    /* color: grey; */
+}
+
+.row .icons {
+    padding-top: 8px;
+    width: 50px;
+}
+
+a {
+    font-size: 8px;
+}
+
+.selected {
+    color: #df69e8;
+}
