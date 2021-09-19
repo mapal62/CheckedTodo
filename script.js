@@ -2,8 +2,8 @@
 let superB
 let todoSor = 0;
 let melyiket
-$('button').click(() => {
-    // console.log('GOMB');
+
+function ujSor() {
     superB = $('input').val();
     if (superB !== "") {
         todoSor = todoSor + 1;
@@ -18,6 +18,11 @@ $('button').click(() => {
         `)
     }
     superB = $('input').val("");
+
+}
+$('button').click(() => {
+    // console.log('GOMB');
+    ujSor();
 })
 $('.lista').on('click', '.check-btn', (event) => {
     // console.log(event);
@@ -56,4 +61,7 @@ textarea.addEventListener('input', (e) => {
 
 textarea.addEventListener('keyup', (e) => {
     logMessage(`"${e.key}" released  [event: keyup]`);
+    if (e.key === "Enter") {
+        ujSor();
+    }
 });
